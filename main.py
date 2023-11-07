@@ -121,10 +121,14 @@ def main():
         # Encode the image to base64
         base64_image = encode_image(picture)
 
+        # OpenAI API Key
+        api_key = "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"
+
         headers = {
             "Content-Type": "application/json",
-            "Authorization": f"Bearer {api_key}"
-        }
+            "Authorization": f"Bearer {openai_api_key}"
+            }
+
 
         payload = {
             "model": "gpt-4-vision-preview",
